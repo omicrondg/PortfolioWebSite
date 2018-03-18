@@ -22,7 +22,7 @@ body {
 }
 
 .top-img {
-  min-height: 500px;
+  min-height: 650px;
   color: #fff;
   text-align: center;
   margin-top: 2rem;
@@ -30,13 +30,13 @@ body {
 
 .bg-image {
   position: absolute;
-  background: #fff url('https://images.pexels.com/photos/109371/pexels-photo-109371.jpeg');
+  background: #fff url('https://images.unsplash.com/photo-1468956332313-2dcf1542828f?ixlib=rb-0.3.5&s=9444343427346a400967c12419759570&auto=format&fit=crop&w=1350&q=80');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 1280px;
-  height: 500px;
+  height: 650px;
   z-index: -1;
 }
 
@@ -44,4 +44,9 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.content {
+  display: grid;
+  
 }
