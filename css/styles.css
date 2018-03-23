@@ -13,15 +13,38 @@ body {
 /* -------  Header -------- */
 
 .header-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   min-height: 150px;
   border-bottom: 2px solid #7d97ad;
 }
 
 .logo {
+  align-self: center;
+}
+.logo-img {
   width: 8rem;
+  display: inline-block;
+}
+
+h1.name {
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 2.5rem;
+}
+
+.name-container {
+  align-self: center;
+  text-align: right;
+  display: inline-block;
 }
 
 .top-img {
+  width: 100%;
   min-height: 650px;
   color: #fff;
   text-align: center;
@@ -40,13 +63,42 @@ body {
   z-index: -1;
 }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto;
+.content {
+  /* display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; */
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-auto-rows: 450px;
+  grid-gap: 1.5rem;
 }
 
-.content {
-  display: grid;
+.work-card {
+  width: 100%;
+  min-width: 320px;
+  background-color: steelblue;
+  margin-top: 2rem;
+}
+
+.img {
+  display: block;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 60%;
+
+}
+
+
+@media screen and (min-width: 720px) {
   
+  .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
